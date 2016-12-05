@@ -1,0 +1,12 @@
+html, body {
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+.tbl-CRUD td:nth-child(11) {
+	width: 10%;
+}
+.none {
+	display: none;
+}
+.main-div {
+	background-color: #efefef;
+}
