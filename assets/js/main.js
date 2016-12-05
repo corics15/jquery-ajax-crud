@@ -5,7 +5,7 @@ $(document).ready(function() {
 		// var idx		= $(e.target).children().context.cellIndex;
 		// var column 	= $('.tbl-CRUD td').children().prevObject[idx].attributes[0].value;
 		// $.ajax({
-		// 	url 	: 'index.php/Main/updateColumn',
+		// 	url 	: 'Main/updateColumn',
 		// 	type 	: 'post',
 		// 	data 	: {
 		// 		id 		: id,
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		var id = $(this).attr('data-id');
 		$('.sub-div').fadeIn(500);
 		$.ajax({
-			url 	: 'index.php/Main/getForm',
+			url 	: 'Main/getForm',
 			type 	: 'post',
 			data 	: {id : id},
 			success : function(response) {
@@ -52,7 +52,7 @@ $(document).ready(function() {
 		var form = $('#updateFrm').serializeArray();
 		form.push({name: "id", value: id});
 		$.ajax({
-			url		: 'index.php/Main/submittedData',
+			url		: 'Main/submittedData',
 			type 	: 'post',
 			data 	: $.param(form),
 			success : function(response) {

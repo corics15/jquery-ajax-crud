@@ -14,7 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+		<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"> -->
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -91,6 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
 	    <script src="<?= base_url('assets/js/main.js') ?>"></script>
   </body>
 </html>

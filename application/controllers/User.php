@@ -27,7 +27,7 @@ class User extends CI_Controller {
         $this->_truncate_db();
 
         // seed users
-        $this->_seed_users(25);
+        $this->_seed_users(100);
 
         // call more seeds here...
     }
