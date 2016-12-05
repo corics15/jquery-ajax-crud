@@ -11,8 +11,8 @@
 				<th>Email</th>
 				<th>DOB</th>
 				<th>Registration Date</th>
-				<th>IP Address</th>
-				<th>Action</th> -->
+				<th>IP Address</th> -->
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>

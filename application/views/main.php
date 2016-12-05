@@ -14,7 +14,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-		<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css"> -->
 		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
 		<link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
 
@@ -24,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<title>jQuery AJAX CRUD</title>
+		<title>jQuery AJAX CRUD with CI-3.1.2</title>
 	</head>
 	<body>
 

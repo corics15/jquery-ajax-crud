@@ -43,6 +43,7 @@ $(document).ready(function() {
 
 	$(document).on('click', '.delete', function(e) {
 		e.preventDefault();
+		$('.sub-div').fadeOut();
 		$('.main-div').removeClass('col-md-6').addClass('col-md-12');
 	});
 
@@ -57,15 +58,14 @@ $(document).ready(function() {
 			data 	: $.param(form),
 			success : function(response) {
 				$('.sub-div').fadeOut();
-				$('.main-div').removeClass('col-md-6').addClass('col-md-12');
-				$('.main-div').html(response);
+				$('.main-div').html(response).removeClass('col-md-6').addClass('col-md-12');
 				$('.tbl-CRUD').DataTable({
 					searchHighlight 	: true,
 					lengthMenu 			: [5, 10, 20, 30],
 					order 				: [[ 0, 'desc' ]],
-					"scrollX" 			: true,
+					//'scrollX' 			: true,
 					stateSave 			: true,
-					"oLanguage" 		: { "sSearch": "Filter:"}
+					'oLanguage' 		: { 'sSearch': 'Filter:'}
 				});
 			}
 		});
