@@ -7,9 +7,15 @@ html, body {
 .none {
 	display: none;
 }
-.main-div {
-	/*background-color: #efefef;*/
-}
 .w100 {
 	width: 100% !important;
+}
+.mini-footer {
+	font-size: 11px;
+	background-color: #333;
+	color: #fff;
+	padding: 8px;
+}
+.mini-footer a {
+	text-decoration: none;
 }

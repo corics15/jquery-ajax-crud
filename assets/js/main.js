@@ -40,22 +40,41 @@ $(document).ready(function() {
 
 	$(document).on('click', '.delete', function() {
 		var id = $(this).attr('data-id');
-		$.ajax({
-			url		: 'Main/deleteEntry',
-			type 	: 'post',
-			data 	: {id:id},
-			success : function(response) {
-				$('.main-div').html(response);
-				$('.tbl-CRUD').DataTable({
-					searchHighlight 	: true,
-					lengthMenu 			: [5, 10, 20, 30],
-					order 				: [[ 0, 'desc' ]],
-					//'scrollX' 			: true,
-					stateSave 			: true,
-					'oLanguage' 		: { 'sSearch': 'Filter:'}
-				});
-			}
-		});
+
+		$.confirm({
+            title           : '<span class="font-orange">Confirm Remove Entry</span>',
+            content         : '<span>Please be certain.<br><br>I cannot undo this action!</span>',
+            animation       : 'rotateY',
+            closeAnimation  : 'rotateY',
+            type            : 'red',
+            buttons         : {
+                yes: {
+                    btnClass: 'btn-danger btn-xs',
+                    action  : function() {
+                        $('.delete').prop('disabled', true).html('Processing...');
+                        $.ajax({
+							url		: 'Main/deleteEntry',
+							type 	: 'post',
+							data 	: {id:id},
+							success : function(response) {
+								$('.main-div').html(response);
+								$('.tbl-CRUD').DataTable({
+									searchHighlight 	: true,
+									lengthMenu 			: [5, 10, 20, 30],
+									order 				: [[ 0, 'desc' ]],
+									//'scrollX' 			: true,
+									stateSave 			: true,
+									'oLanguage' 		: { 'sSearch': 'Filter:'}
+								});
+							}
+                        });
+                    }
+                },
+                no: {
+                    btnClass: 'btn-dark btn-xs',
+                },
+            }
+        });
 	});
 
 	$(document).on('click', '.cancel-frm', function() {

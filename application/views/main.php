@@ -15,6 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.0.1/jquery-confirm.min.css" />
 		<link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="container">
 			<div class="row">
 				<h3>CodeIgniter 3.1.2 CRUD</h3>
-				<p><span class="help-block">Implements jQuery, jQuery dataTable plugin and jQuery Confirm plugin</span></p>
+				<p><span class="help-block">Implements jQuery AJAX, jQuery dataTable Bootstrap and jQuery Confirm plugins.</span></p>
 				<div class="form-group">
 					<button type="button" class="btn btn-info btn-sm create">Create</button>
 				</div>
@@ -86,6 +87,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mini-footer">Copyright &copy; 2016 <a href="http://www.enrico-perez.16mb.com" target="_blank">Enrico D. Perez</a></div>
+				</div>
+			</div>
 		</div>
 
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -93,6 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 	    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.0.1/jquery-confirm.min.js"></script>
 	    <script src="<?= base_url('assets/js/main.js') ?>"></script>
   </body>
 </html>
