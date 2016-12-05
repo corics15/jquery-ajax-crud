@@ -23,15 +23,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<title>jQuery AJAX CRUD with CI-3.1.2</title>
+		<title>CodeIgniter 3.1.2 CRUD</title>
 	</head>
 	<body>
 
 		<div class="container">
 			<div class="row">
-				<h3>jQuery AJAX CRUD</h3>
+				<h3>CodeIgniter 3.1.2 CRUD</h3>
+				<p><span class="help-block">Implements jQuery, jQuery dataTable plugin and jQuery Confirm plugin</span></p>
 				<div class="form-group">
-					<button type="button" class="btn btn-info btn-sm">Create</button>
+					<button type="button" class="btn btn-info btn-sm create">Create</button>
 				</div>
 			</div>
 
@@ -79,8 +80,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 				<div class="col-md-4 sub-div none">
-					<div class="panel panel-default">
-						<div class="panel-heading">Update</div>
+					<div class="panel">
+						<div class="panel-heading"></div>
 						<div class="panel-body"></div>
 					</div>
 				</div>

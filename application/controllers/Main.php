@@ -31,6 +31,10 @@ class Main extends CI_Controller {
 		$this->load->view('frmUpdate', $data);
 	}
 
+	public function showForm() {
+		$this->load->view('frmUpdate');
+	}
+
 	public function submittedData() {
 		$fn = $this->input->post('fn');
 		$ln = $this->input->post('ln');
@@ -46,7 +50,32 @@ class Main extends CI_Controller {
 		$this->db->where('id', $id);
 		$this->db->update('user', $data);
 
-		$data['user_info'] 		= $this->User_model->getAllUsers();
+		$data['user_info'] = $this->User_model->getAllUsers();
+		$this->load->view('updatedDiv', $data);
+	}
+
+	public function createEntry() {
+		$fn = $this->input->post('fn');
+		$ln = $this->input->post('ln');
+		$un = $this->input->post('un');
+
+		$data = array(
+		        'firstname' => $fn,
+		        'lastName' 	=> $ln,
+		        'username' 	=> $un
+		);
+
+		$this->db->insert('user', $data);
+
+		$data['user_info'] = $this->User_model->getAllUsers();
+		$this->load->view('updatedDiv', $data);
+	}
+
+	public function deleteEntry() {
+		$id = $this->input->post('id');
+		$this->db->delete('user', array('id' => $id));
+
+		$data['user_info'] = $this->User_model->getAllUsers();
 		$this->load->view('updatedDiv', $data);
 	}
 }
