@@ -8,5 +8,8 @@ html, body {
 	display: none;
 }
 .main-div {
-	background-color: #efefef;
+	/*background-color: #efefef;*/
+}
+.w100 {
+	width: 100% !important;
 }

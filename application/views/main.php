@@ -14,6 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 		<link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="row">
 				<div class="col-md-12 main-div">
 					<div class="table-responsive">
-						<table class="table table-striped table-hover tbl-CRUD">
+						<table class="table table-striped table-hover tbl-CRUD w100">
 							<thead>
 								<tr>
 									<th>First</th>
@@ -55,17 +56,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</thead>
 							<tbody>
 								<?php foreach ($user_info as $r) : ?>
-								<tr data-id="<?= $r->id ?>">
-									<td data-column="firstname" class="fn"><?= $r->firstname ?></td>
-									<td data-column="lastName" class="ln"><?= $r->lastName?></td>
-									<td data-column="username" class="un"><?= $r->username ?></td>
-									<!-- <td data-column="gender" class="gd"><?= $r->gender ?></td>
-									<td data-column="country" class="ct"><?= $r->country ?></td>
-									<td data-column="postcode" class="pc"><?= $r->postcode ?></td>
-									<td data-column="email" class="em"><?= $r->email ?></td>
-									<td data-column="birthdate" class="bd"><?= date('M d, Y', strtotime($r->birthdate)) ?></td>
-									<td data-column="registration_date" class="rd"><?= date('M d, Y', strtotime($r->registration_date)) ?></td>
-									<td data-column="ip_address" class="ip"><?= $r->ip_address ?></td> -->
+								<tr>
+									<td><?= $r->firstname ?></td>
+									<td><?= $r->lastName?></td>
+									<td><?= $r->username ?></td>
+									<!-- <td><?= $r->gender ?></td>
+									<td><?= $r->country ?></td>
+									<td><?= $r->postcode ?></td>
+									<td><?= $r->email ?></td>
+									<td><?= date('M d, Y', strtotime($r->birthdate)) ?></td>
+									<td><?= date('M d, Y', strtotime($r->registration_date)) ?></td>
+									<td><?= $r->ip_address ?></td> -->
 									<td>
 										<button type="submit" class="btn btn-primary btn-xs update" data-id="<?= $r->id ?>">Update</button>&nbsp;
 										<button type="button" class="btn btn-warning btn-xs delete" data-id="<?= $r->id ?>">Delete</button>
@@ -89,6 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 	    <script src="<?= base_url('assets/js/main.js') ?>"></script>
   </body>
 </html>
