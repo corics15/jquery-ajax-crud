@@ -46,13 +46,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<th>First</th>
 									<th>Last</th>
 									<th>Username</th>
-									<!-- <th>Gender</th>
-									<th>Country</th>
-									<th>Postal Code</th>
-									<th>Email</th>
-									<th>DOB</th>
-									<th>Registration Date</th>
-									<th>IP Address</th> -->
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -62,13 +55,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<td><?= $r->firstname ?></td>
 									<td><?= $r->lastName?></td>
 									<td><?= $r->username ?></td>
-									<!-- <td><?= $r->gender ?></td>
-									<td><?= $r->country ?></td>
-									<td><?= $r->postcode ?></td>
-									<td><?= $r->email ?></td>
-									<td><?= date('M d, Y', strtotime($r->birthdate)) ?></td>
-									<td><?= date('M d, Y', strtotime($r->registration_date)) ?></td>
-									<td><?= $r->ip_address ?></td> -->
 									<td>
 										<button type="submit" class="btn btn-primary btn-xs update" data-id="<?= $r->id ?>">Update</button>&nbsp;
 										<button type="button" class="btn btn-warning btn-xs delete" data-id="<?= $r->id ?>">Delete</button>
